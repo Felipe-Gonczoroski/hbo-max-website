@@ -61,3 +61,60 @@ p {
 section {
   scroll-margin-top: 7.5rem;
 }
+
+.button {
+  padding: 0.5rem 1.62rem;
+  background-color: var(--tertiary-color);
+  border-radius: 500px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.button.button--gradient {
+  background: var(--btn-bg-color-gradient);
+  outline: 3px solid transparent;
+  transition: background 1s, outline 1s, transform 1s;
+  background-size: 250%;
+}
+
+.button.button--gradient:hover {
+  background-color: transparent;
+  background-position: 100%;
+  outline: 2px solid var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  gap: 1.35rem;
+}
+
+.menu__logo-image {
+  width: 120px;
+}
+
+.menu__links-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu__item {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
