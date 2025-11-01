@@ -123,6 +123,8 @@ section {
 }
 
 .text-small {
+  max-width: 16rem;
   font-size: 1rem;
   font-weight: 300;
+  text-align: center;
 }
