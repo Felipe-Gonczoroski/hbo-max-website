@@ -172,6 +172,7 @@ section {
   width: 100%;
   padding: 2rem 1.5rem;
   gap: 1.35rem;
+  background: linear-gradient(0deg, var(--nav-bg-color), transparent);
   z-index: 1;
 }
 
