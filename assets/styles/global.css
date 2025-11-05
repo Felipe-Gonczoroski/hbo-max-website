@@ -212,6 +212,14 @@ section {
   text-align: center;
 }
 
+.footer__link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .footer__link {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -253,4 +261,43 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
+}
+
+@media (min-width: 710px) {
+  html {
+    font-size: 16px;
+  }
+
+  .header {
+    margin-top: 4rem;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+  }
+
+  .menu__logo-image {
+    width: 170px;
+    align-self: center;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__link-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    line-height: 0;
+    gap: 1.25rem;
+  }
+
+  .footer__legal {
+    margin: 1.5rem 0 0;
+  }
 }
