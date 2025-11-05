@@ -93,6 +93,7 @@ main {
 .title {
   font-size: 2rem;
   font-weight: 500;
+  text-align: center;
 }
 
 .container {
@@ -151,6 +152,73 @@ main {
 .subscription__description li::marker {
   content: "+";
   font-size: 2.25rem;
+}
+
+.channels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 5rem 0 7.8rem;
+  padding: 1.5rem;
+}
+
+.channels__container {
+  display: grid;
+  grid-template-columns: repeat(6, 100%);
+  grid-auto-flow: column;
+  overflow: auto hidden;
+  margin-top: 2.5rem;
+  gap: 2.7rem;
+}
+
+.channels__card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  transition: transform 0.8s, background 0.8s, border 1s;
+}
+
+.channels__card:hover {
+  border: 2px solid var(--tertiary-color);
+}
+
+.channels__card:nth-child(1):hover {
+  background-image: url("/assets/images/hbo-hover_0.webp");
+}
+
+.channels__card:nth-child(2):hover {
+  background-image: url("/assets/images/MAX-Hover.webp");
+}
+
+.channels__card:nth-child(3):hover {
+  background-image: url("/assets/images/DC-Hover.webp");
+}
+
+.channels__card:nth-child(4):hover {
+  background-image: url("/assets/images/WB-Hover.webp");
+}
+
+.channels__card:nth-child(5):hover {
+  background-image: url("/assets/images/CN-Hover.png");
+}
+
+.channels__card:nth-child(6):hover {
+  background-image: url("/assets/images/UCL-Hover.webp");
+}
+
+.channels__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 2s;
+}
+
+.channels__card:hover .channels__image {
+  opacity: 0;
 }
 
 @keyframes gradient {
