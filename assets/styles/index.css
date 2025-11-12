@@ -301,3 +301,9 @@ main {
     column-gap: 2.5rem;
   }
 }
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+}
