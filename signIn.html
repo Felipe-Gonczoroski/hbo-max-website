@@ -18,5 +18,30 @@
         <a class="menu__item button" href="#subscription">Assine agora</a>
       </div>
     </nav>
+    <main class="content">
+      <form class="login">
+        <h1 class="login__title">Entrar</h1>
+        <label class="login__label"> Você tem uma conta da HBO Max? </label>
+        <input
+          class="login__field"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Endereço de e-mail"
+        />
+        <input
+          class="login__field"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Senha"
+          minlength="8"
+        />
+        <div class="login__actions">
+          <button class="button button--gradient" type="submit">Entrar</button>
+          <a class="login__link" href="#">Esqueceu a senha?</a>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
