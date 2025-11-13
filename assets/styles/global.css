@@ -149,6 +149,7 @@ section {
   outline: 3px solid transparent;
   transition: background 1s, outline 1s, transform 1s;
   background-size: 250%;
+  padding: 0.9rem 2.5rem;
 }
 
 .button.button--gradient:hover {
